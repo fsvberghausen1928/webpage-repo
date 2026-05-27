@@ -77,6 +77,14 @@
     font-size: 28px;
     cursor: pointer;
   }
+
+  .welcome-text {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: #f1f5f9;
+    letter-spacing: 1px;
+  }
   
   /* HERO */
   
@@ -98,7 +106,8 @@
   
   .hero-content h1 {
     font-size: 64px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    line-height: 1.2;
   }
   
   .hero-content p {
@@ -250,6 +259,10 @@
       grid-template-columns: 1fr;
     }
   
+    .welcome-text {
+      font-size: 18px;
+    }
+    
     .hero-content h1 {
       font-size: 38px;
     }
