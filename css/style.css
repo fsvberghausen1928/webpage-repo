@@ -71,6 +71,18 @@ header {
   letter-spacing: 1px;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
 .nav-links {
   display: flex;
   list-style: none;
