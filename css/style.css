@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Inter', Arial, sans-serif;
   background: #f6fff8;
   color: #1f2937;
   line-height: 1.6;
@@ -31,6 +31,7 @@ body {
   margin-bottom: 60px;
   color: #166534;
   position: relative;
+  font-family: 'Playfair Display', serif;
 }
 
 .section-title::after {
@@ -67,6 +68,17 @@ header {
   padding: 18px 0;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo img {
+  height: 55px;
+  width: auto;
+}
+
 .logo h1 {
   font-family: 'Playfair Display', serif;
   font-size: 28px;
@@ -75,17 +87,7 @@ header {
   letter-spacing: 0.5px;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: bold;
-}
-
-.logo img {
-  height: 50px;
-  width: auto;
-}
+/* NAVIGATION */
 
 .nav-links {
   display: flex;
@@ -95,8 +97,8 @@ header {
 
 .nav-links a {
   text-decoration: none;
-  color: white;
-  font-weight: 500;
+  color: #166534;
+  font-weight: 600;
   transition: 0.3s;
   position: relative;
 }
@@ -105,11 +107,15 @@ header {
   content: "";
   width: 0%;
   height: 2px;
-  background: white;
+  background: #22c55e;
   position: absolute;
   bottom: -5px;
   left: 0;
   transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #22c55e;
 }
 
 .nav-links a:hover::after {
@@ -118,7 +124,7 @@ header {
 
 .menu-toggle {
   display: none;
-  color: white;
+  color: #166534;
   font-size: 30px;
   cursor: pointer;
 }
@@ -163,6 +169,7 @@ header {
   margin-bottom: 25px;
   line-height: 1.15;
   font-weight: 800;
+  font-family: 'Playfair Display', serif;
 }
 
 .hero-content p {
@@ -207,6 +214,7 @@ header {
   color: #166534;
   margin-bottom: 20px;
   font-size: 30px;
+  font-family: 'Playfair Display', serif;
 }
 
 /* TEAM CARDS */
@@ -244,6 +252,7 @@ header {
   margin-bottom: 10px;
   color: #166534;
   font-size: 24px;
+  font-family: 'Playfair Display', serif;
 }
 
 .card p {
@@ -265,7 +274,8 @@ table {
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
-th, td {
+th,
+td {
   padding: 18px;
   text-align: center;
   border-bottom: 1px solid #e5e7eb;
@@ -318,6 +328,10 @@ footer {
   .hero-content h1 {
     font-size: 52px;
   }
+
+  .logo h1 {
+    font-size: 24px;
+  }
 }
 
 /* MOBILE */
@@ -334,7 +348,7 @@ footer {
     left: 0;
 
     width: 100%;
-    background: #166534;
+    background: white;
 
     flex-direction: column;
     text-align: center;
@@ -342,6 +356,8 @@ footer {
     padding: 25px 0;
 
     display: none;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
   }
 
   .nav-links.active {
@@ -370,5 +386,9 @@ footer {
 
   .section-title {
     font-size: 34px;
+  }
+
+  .logo h1 {
+    font-size: 20px;
   }
 }
